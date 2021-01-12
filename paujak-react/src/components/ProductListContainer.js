@@ -6,30 +6,29 @@ import axios from "axios";
 class ProductListContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { products: [] };
-    this.produktas = {};
-    this.newProductAdded = false;
+    this.state = { sventes: [] };
+    this.svente = {};
   }
 
   componentDidMount() {
     document.title = "My photo e-shop | Products";
     const loadProducts = async () => {
-      let response = await axios.get(`${process.env.PUBLIC_URL}/api/products/`);
-      this.setState({ products: response.data });
+      let response = await axios.get(`${process.env.PUBLIC_URL}/api/sventes/`);
+      this.setState({ sventes: response.data });
     };
     loadProducts();
   }
 
-  details = (id) => {
-    this.props.history.push(`/products/${id}`);
+  details = (pavadinimas) => {
+    this.props.history.push(`/sventes/${pavadinimas}`);
   }
 
   render() {
-    if (this.state.products.length > 0) {
+    if (this.state.sventes.length > 0) {
       return (
         <main className="container">
           <div className="row my-5">
-            <ProductListComponent list={this.state.products} details={this.details}/>
+            <ProductListComponent list={this.state.sventes} details={this.details}/>
           </div>
         </main>
       );

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import ServicesContext from "./ServicesContext"
 
 const NavigationComponent = (props) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -11,7 +10,7 @@ const NavigationComponent = (props) => {
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <Link className="navbar-brand" to="/" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-          Photo Shop
+          Švenčių registras
         </Link>
         <div
           className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
@@ -20,36 +19,21 @@ const NavigationComponent = (props) => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-                Home
+                Pradžia
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/products" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-                Products
+              <Link className="nav-link" to="/sventes" onClick={!isNavCollapsed ? handleNavCollapse : null}>
+                Visos šventės
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/admin" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-                Admin Panel
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/help/alas" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-                Help
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/change-user" onClick={!isNavCollapsed ? handleNavCollapse : null}>
-                Change user
+                Švenčių administravimas
               </Link>
             </li>
           </ul>
         </div>
-        {/* <div>
-          <ServicesContext.Consumer>
-            {(value) => <span>Hello, {value.userName}</span>}
-          </ServicesContext.Consumer>
-        </div> */}
         <button
           className="navbar-toggler"
           data-toggle="collapse"

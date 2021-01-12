@@ -10,7 +10,7 @@ class AdministrationContainer extends Component {
   }
 
   delete = (id) => {
-    axios.delete(`${process.env.PUBLIC_URL}/api/products/${id}`)
+    axios.delete(`${process.env.PUBLIC_URL}/api/sventes/${id}`)
     .then(response => this.setState({products: [...this.state.products.filter((product) => product.id !== id)],
     }));
   }

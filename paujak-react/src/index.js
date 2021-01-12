@@ -8,7 +8,6 @@ import { Switch, Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import NavigationComponent from "./components/NavigationComponent";
 import AdministrationContainer from "./components/AdministrationContainer";
-import ChangeUserContainer from "./components/ChangeUserContainer";
 import ProductAdministrationContainer from "./components/ProductAdministrationContainer";
 import ProductDisplayContainer from "./components/ProductDisplayContainer";
 
@@ -22,19 +21,6 @@ var NoMatch = (props) => {
   );
 };
 
-var DemonstruotiNavigacija = (props) => {
-  let { id } = props.match.params;
-
-  document.title = "Svenciu registro programa | Pagalba";
-
-  return (
-    <div>
-      At route: {props.location.pathname} (ID: {id})
-      <pre>{JSON.stringify(props, null, 2)}</pre>
-    </div>
-  );
-};
-
 document.title = "Svenciu registro programa";
 
 ReactDOM.render(
@@ -42,14 +28,12 @@ ReactDOM.render(
     <NavigationComponent>
       <Switch>
         <Route exact path="/" component={ProductListContainer} />
-        <Route exact path="/products/" component={ProductListContainer} />
-        <Route exact path="/products/:id" component={ProductDisplayContainer} />
+        <Route exact path="/sventes/" component={ProductListContainer} />
+        <Route exact path="/sventes/:name" component={ProductDisplayContainer} />
         <Route exact path="/admin/" component={AdministrationContainer} />
-        <Route exact path="/admin/:id" component={ProductAdministrationContainer} /> 
-        <Route exact path="/help/:id" component={DemonstruotiNavigacija} />
-        <Route exact path="/change-user" component={ChangeUserContainer} />
+        <Route exact path="/admin/:name" component={ProductAdministrationContainer} /> 
         <Route path="*" component={NoMatch} />
-		<Route component={NoMatch} />
+		    <Route component={NoMatch} />
       </Switch>
     </NavigationComponent>
   </BrowserRouter>,

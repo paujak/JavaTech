@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/paujak-react/static/css/main.427275ce.chunk.css",
-    "main.js": "/paujak-react/static/js/main.ed6883e2.chunk.js",
-    "main.js.map": "/paujak-react/static/js/main.ed6883e2.chunk.js.map",
-    "runtime-main.js": "/paujak-react/static/js/runtime-main.e2ac8309.js",
-    "runtime-main.js.map": "/paujak-react/static/js/runtime-main.e2ac8309.js.map",
-    "static/css/2.437d98bc.chunk.css": "/paujak-react/static/css/2.437d98bc.chunk.css",
-    "static/js/2.4143788a.chunk.js": "/paujak-react/static/js/2.4143788a.chunk.js",
-    "static/js/2.4143788a.chunk.js.map": "/paujak-react/static/js/2.4143788a.chunk.js.map",
-    "static/js/3.bab6ce62.chunk.js": "/paujak-react/static/js/3.bab6ce62.chunk.js",
-    "static/js/3.bab6ce62.chunk.js.map": "/paujak-react/static/js/3.bab6ce62.chunk.js.map",
-    "index.html": "/paujak-react/index.html",
-    "precache-manifest.3d61d93667ad91f2c2874cc47be1e330.js": "/paujak-react/precache-manifest.3d61d93667ad91f2c2874cc47be1e330.js",
-    "service-worker.js": "/paujak-react/service-worker.js",
-    "static/css/2.437d98bc.chunk.css.map": "/paujak-react/static/css/2.437d98bc.chunk.css.map",
-    "static/css/main.427275ce.chunk.css.map": "/paujak-react/static/css/main.427275ce.chunk.css.map",
-    "static/js/2.4143788a.chunk.js.LICENSE.txt": "/paujak-react/static/js/2.4143788a.chunk.js.LICENSE.txt"
+    "main.css": "/paujak-spring/static/css/main.427275ce.chunk.css",
+    "main.js": "/paujak-spring/static/js/main.be325333.chunk.js",
+    "main.js.map": "/paujak-spring/static/js/main.be325333.chunk.js.map",
+    "runtime-main.js": "/paujak-spring/static/js/runtime-main.0e95bd9c.js",
+    "runtime-main.js.map": "/paujak-spring/static/js/runtime-main.0e95bd9c.js.map",
+    "static/css/2.437d98bc.chunk.css": "/paujak-spring/static/css/2.437d98bc.chunk.css",
+    "static/js/2.4143788a.chunk.js": "/paujak-spring/static/js/2.4143788a.chunk.js",
+    "static/js/2.4143788a.chunk.js.map": "/paujak-spring/static/js/2.4143788a.chunk.js.map",
+    "static/js/3.bab6ce62.chunk.js": "/paujak-spring/static/js/3.bab6ce62.chunk.js",
+    "static/js/3.bab6ce62.chunk.js.map": "/paujak-spring/static/js/3.bab6ce62.chunk.js.map",
+    "index.html": "/paujak-spring/index.html",
+    "precache-manifest.0728112a63a7509f4a652632769740ad.js": "/paujak-spring/precache-manifest.0728112a63a7509f4a652632769740ad.js",
+    "service-worker.js": "/paujak-spring/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/paujak-spring/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.427275ce.chunk.css.map": "/paujak-spring/static/css/main.427275ce.chunk.css.map",
+    "static/js/2.4143788a.chunk.js.LICENSE.txt": "/paujak-spring/static/js/2.4143788a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e2ac8309.js",
+    "static/js/runtime-main.0e95bd9c.js",
     "static/css/2.437d98bc.chunk.css",
     "static/js/2.4143788a.chunk.js",
     "static/css/main.427275ce.chunk.css",
-    "static/js/main.ed6883e2.chunk.js"
+    "static/js/main.be325333.chunk.js"
   ]
 }

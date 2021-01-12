@@ -1,13 +1,13 @@
-package lt.paujak.springtemplate;
+package lt2021.sventes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringtemplateApplication {
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringtemplateApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 
 }

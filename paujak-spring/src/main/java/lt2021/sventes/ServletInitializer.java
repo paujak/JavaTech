@@ -1,4 +1,4 @@
-package lt.paujak.springtemplate;
+package lt2021.sventes;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
@@ -7,7 +7,7 @@ public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SpringtemplateApplication.class);
+		return application.sources(App.class);
 	}
 
 }

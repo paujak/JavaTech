@@ -3,12 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>lt.paujak</groupId>
-	<artifactId>springtemplate</artifactId>
+	<groupId>lt2021.sventes</groupId>
+	<artifactId>paujak-spring</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>springtemplate</name>
-	<description>Template SpringBootApp</description>
+	<name>Svenciu registro programa</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -19,7 +18,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<start-class>lt.paujak.SpringtemplateApplication</start-class>
+		<start-class>lt2021.sventes.App</start-class>
 		<java.version>11</java.version>
 		<maven.compiler.source>11</maven.compiler.source>
 		<maven.compiler.target>11</maven.compiler.target>

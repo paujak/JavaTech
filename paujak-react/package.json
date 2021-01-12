@@ -1,7 +1,8 @@
 {
-  "name": "paujak-re",
+  "name": "paujak-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/paujak-react/",
   "dependencies": {
     "@babel/helper-builder-react-jsx": "^7.10.4",
     "@babel/helper-builder-react-jsx-experimental": "^7.12.11",

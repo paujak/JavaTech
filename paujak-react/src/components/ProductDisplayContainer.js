@@ -6,12 +6,11 @@ export class ProductDisplayContainer extends Component {
   urlId = "";
 
   state = {
-    id: "",
-    title: "",
-    imageUrl: "",
-    description: "",
-    price: "",
-    quantity: "",
+    pavadinimas: "",
+    aprasymas: "",
+    imageSrc: "",
+    tipas: "",
+    arKeltiVeliava: "",
   };
 
   loaded = false;
@@ -19,9 +18,9 @@ export class ProductDisplayContainer extends Component {
   constructor(props) {
     super();
     this.urlId = props.match.params.id;
-    document.title = `My photo e-shop | Product Detail (ID:${this.urlId})`;
+    document.title = `Švenčių registras | ${this.urlId})`;
     axios
-      .get(`${process.env.PUBLIC_URL}/api/products/${this.urlId}`)
+      .get(`${process.env.PUBLIC_URL}/api/sventes/${this.urlId}`)
       .then((response) => {
         this.loaded = true;
         this.setState(response.data);
@@ -29,7 +28,7 @@ export class ProductDisplayContainer extends Component {
   }
 
   onClose = () => {
-    this.props.history.push("/products/");
+    this.props.history.push("/sventes/");
   };
 
   render() {

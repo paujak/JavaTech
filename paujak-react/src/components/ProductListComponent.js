@@ -6,10 +6,12 @@ const ProductListComponent = (props) => {
     return props.list.map((item, index) => (
         <ProductCard
           key={index}
-          id={item.id}
-          imageUrl={item.imageUrl}
-          title={item.title}
-          price={item.price}
+          id={item.pavadinimas}
+          imageUrl={item.imageSrc}
+          title={item.pavadinimas}
+          tipas={item.tipas}
+          aprasymas={item.aprasymas}
+          veliava={item.arKeltiVeliava}
           onClick={props.details}
         />
         )
